@@ -10,8 +10,8 @@ function Main() {
   return (
   
     <div>
-      <Hornedbeast title="Unicorn"image="./uni.jpg" description="Pretty little unicorn." />
-      <Hornedbeast title="Ram" image="./goat.jpg" description="Angry little ram."/>
+      <Hornedbeast title="Unicorn🦄"image="./uni.jpg" description="Pretty little unicorn." />
+      <Hornedbeast title="Ram🐏" image="./goat.jpg" description="Angry little ram."/>
     </div>
   );
 }
