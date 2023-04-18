@@ -3,7 +3,7 @@ import './App.css';
 
 function Footer() {
   return (
-   <p>Georleshia Minter is the author.</p>
+   <p>Created by: Georleshia Minter.</p>
   );
 }
 
