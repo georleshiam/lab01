@@ -3,7 +3,7 @@ import './App.css';
 
 function Header() {
   return (
-    <h1> 301 Lab01 </h1>
+    <h1> 301 Lab02 </h1>
   );
 }
 
