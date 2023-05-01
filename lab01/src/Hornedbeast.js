@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Button } from 'react-bootstrap';
 function HornedBeast (props)  {
   const [imageIsLiked, setImageIsLiked] = useState(false) //declare state
   const [likes, setLikes] = useState(0)
@@ -24,6 +25,9 @@ return (
     setLikes(likes + 1)
   }
 }}> {heart} {likes} </h1>
+<Button onClick={function(){
+            props.setDisplayModal(true)
+          }}>Launch Modal</Button>
   </div>
 );
 

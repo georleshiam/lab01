@@ -3,10 +3,24 @@ import './App.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Main from './Main.js';
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {useState} from 'react';
 
 function App() {
+  const [DisplayModal, setDisplayModal] = useState(false)
   return (
     <div className="App">
+      <Modal show={DisplayModal} onHide={function(){
+        setDisplayModal(false)
+      }}> 
+      This is some text.
+      </Modal>
+ {/* <Button onClick={function({
+  setDisplayModal(true)
+}}>Launch</Button> */}
+
+<Main setDisplayModal={setDisplayModal}/>
       <Header/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,7 +34,7 @@ function App() {
         >
           Learn React
         </a>
-        <Main/>
+        <Main setDisplayModal={setDisplayModal}/>
         <Footer/>
     </div>
   );

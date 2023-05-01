@@ -3,13 +3,19 @@
 // import './App.css';
 import Hornedbeast from './Hornedbeast';
 import data from './data.json'
+import { Button } from 'react-bootstrap';
 // define component
-function Main() {
+function Main(props) {
  // 
  
   return (
-  // Below I added the additional files from the data.json file. After identifing the data, the photos and description is now on webpage.
     <div>
+          <Button onClick={function(){
+            props.setDisplayModal(true)
+          }}>Launch Modal</Button>
+
+      <Hornedbeast setDisplayModal= {props.setDisplayModal(true)}
+/>
       <Hornedbeast title="Unicorn🦄"image="./uni.jpg" description="Pretty little unicorn." />
       <Hornedbeast title="Ram🐏" image="./goat.jpg" description="Angry little ram."/>
       <Hornedbeast title={data[0].title} image={data[0].image_url} description= {data[0].description}/>
