@@ -6,21 +6,22 @@ import Main from './Main.js';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState} from 'react';
-
+import {Form} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   const [DisplayModal, setDisplayModal] = useState(false)
   return (
     <div className="App">
-      <Modal show={DisplayModal} onHide={function(){
+      {/* <Modal show={DisplayModal} onHide={function(){
         setDisplayModal(false)
       }}> 
       This is some text.
-      </Modal>
+      </Modal> */}
  {/* <Button onClick={function({
   setDisplayModal(true)
 }}>Launch</Button> */}
 
-<Main setDisplayModal={setDisplayModal}/>
+{/* <Main setDisplayModal={setDisplayModal}/> */}
       <Header/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>

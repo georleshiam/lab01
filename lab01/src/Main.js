@@ -10,9 +10,7 @@ function Main(props) {
  
   return (
     <div>
-          <Button onClick={function(){
-            props.setDisplayModal(true)
-          }}>Launch Modal</Button>
+         
 
       <Hornedbeast setDisplayModal= {props.setDisplayModal(true)}
 />
