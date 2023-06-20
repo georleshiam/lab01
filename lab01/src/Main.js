@@ -10,8 +10,6 @@ function Main(props) {
  
   return (
     <div>
-         
-
       <Hornedbeast setDisplayModal= {props.setDisplayModal(true)}
 />
       <Hornedbeast title="Unicorn🦄"image="./uni.jpg" description="Pretty little unicorn." />
